@@ -7,7 +7,7 @@
       "command": "bash",
       "args": [
         "-c",
-        "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace *.ipynb && git add . && git commit -m 'Daily sync: $(date +%Y-%m-%d)' && git push"
+        "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace *.ipynb && git add . && git commit -m \"Daily sync: $(date +%Y-%m-%d)\" && git push"
       ],
       "problemMatcher": [],
       "presentation": {
