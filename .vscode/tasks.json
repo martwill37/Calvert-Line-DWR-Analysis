@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Daily Git Sync",
+      "type": "shell",
+      "command": "jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace *.ipynb && git pull --rebase && git add . && git commit -m \"Daily sync: $(date '+%Y-%m-%d')\" && git push",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    }
+  ]
+}
